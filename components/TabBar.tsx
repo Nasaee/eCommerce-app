@@ -10,7 +10,7 @@ import Animated, {
 import { useEffect, useState } from 'react';
 
 export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
-  const [dimensions, setDimensions] = useState({ height: 20, width: 100 });
+  const [dimensions, setDimensions] = useState({ height: 0, width: 100 });
 
   // ความกว้าง / จำนวน tab = ความกว้างของแต่ละ tab
   const buttonWidth = dimensions.width / state.routes.length;
